@@ -10,13 +10,16 @@
   },
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "story": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "novel_id": {
-      "type": "biginteger"
+      "type": "biginteger",
+      "required": true
     }
   }
 }
