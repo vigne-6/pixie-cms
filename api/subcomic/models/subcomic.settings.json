@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subcomics",
+  "info": {
+    "name": "subcomic"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "pictures": {
+      "type": "json"
+    },
+    "comic_id": {
+      "type": "biginteger"
+    }
+  }
+}

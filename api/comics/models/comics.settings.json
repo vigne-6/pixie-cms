@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comics",
+  "info": {
+    "name": "comics"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "Sinopsis": {
+      "type": "richtext"
+    },
+    "subcomic": {
+      "type": "json"
+    },
+    "views": {
+      "type": "biginteger"
+    },
+    "genre": {
+      "type": "json"
+    },
+    "cover": {
+      "type": "string"
+    }
+  }
+}

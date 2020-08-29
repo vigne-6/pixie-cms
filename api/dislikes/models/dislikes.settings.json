@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dislikes",
+  "info": {
+    "name": "Dislikes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "novel_id": {
+      "type": "biginteger"
+    },
+    "chapter_id": {
+      "type": "biginteger"
+    },
+    "uchap_id": {
+      "type": "text",
+      "required": true,
+      "unique": true
+    }
+  }
+}

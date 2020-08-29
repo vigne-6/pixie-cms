@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stories",
+  "info": {
+    "name": "story"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "story": {
+      "type": "richtext"
+    },
+    "novel_id": {
+      "type": "biginteger"
+    }
+  }
+}

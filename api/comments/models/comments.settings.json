@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comments",
+  "info": {
+    "name": "comments"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "chapter_id": {
+      "type": "biginteger",
+      "required": true
+    },
+    "comment": {
+      "type": "text",
+      "required": true
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "novel_id": {
+      "type": "biginteger",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "novels",
+  "info": {
+    "name": "Novels"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "author": {
+      "type": "string",
+      "required": true
+    },
+    "cover": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "datetime",
+      "required": false
+    },
+    "genre": {
+      "type": "json",
+      "required": true
+    },
+    "sinopsis": {
+      "type": "text"
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "novel": {
+      "type": "json"
+    },
+    "uid": {
+      "type": "uid"
+    },
+    "views": {
+      "type": "biginteger"
+    },
+    "story": {
+      "type": "json"
+    }
+  }
+}

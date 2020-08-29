@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/subcomics",
+      "handler": "subcomic.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/subcomics/count",
+      "handler": "subcomic.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/subcomics/:id",
+      "handler": "subcomic.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/subcomics",
+      "handler": "subcomic.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/subcomics/:id",
+      "handler": "subcomic.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/subcomics/:id",
+      "handler": "subcomic.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
